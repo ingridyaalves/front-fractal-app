@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.root {
+    height: 100vh;
+}
+
+.punk-beer {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    color: orange;
+    background: #f7f7f7;
+    position: relative;
+}
+
+.beer-icon {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.beer-icon2 {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.punk-beer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: #f90;
+}
+
+.punk-beer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f90;
+}
+
+.beer-app {
+    display: flex;
+    justify-content: center;
+}
+
+.app-wrapper {
+    width: 500px;
+    background-color: #f7f7f7;
+}
+
+.all-beers {
+    margin-left: 20px;
+    background-color: #f7f7f7;
+}
+
+.search-input {
+    height: 25px;
+    margin-left: 2px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.wrapp-for-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapp-for-form button {
+    height: 25px;
+}
+
+.search-input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.search-input::-webkit-outer-spin-button,
+.search-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.beer-info {
+    font-size: 17px;
+}
+
+.beers-name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f90;
+}
+
+.beer-info span {
+    font-weight: 600;
+}
+
+.wrapp-for-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.wrapper-for-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    gap: 20px;
+    color: #000000;
+    background-color: #f7f7f7;
+}
+
+.buttons {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.buttons button {
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 2px;
+    font-size: 14px;
+    transition: .1s;
+}
+
+.buttons button:hover {
+    background-color: #f90;
+}
+
+.buttons button:active {
+    background-color: #f90;
+}
+
+.image-beer {
+    height: 50vh;
+    padding: 10px;
+}
+
+.beers-name {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.beer-info {
+    list-style: none;
+    padding: 5px 5px 5px 0;
+}
+
+.food li {
+    list-style: none;
+}
+
+.food {
+    padding: 0%;
+    margin-block-start: 0%;
+    font-size: 17px;
+}
+
+.title-food {
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+
+.select {
+    display: flow-root;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.selected-beer {
+    padding-top: 44px;
+    height: 90vh;
+    margin-left: 20px;
+    padding: 5px 5px 5px 0;
+    width: 500px;
+    background-color: #f7f7f7;
+}
+
+
+/* Spinner */
+
+@keyframes ldio-12 {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(22.5deg)
+    }
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+.ldio-12>div {
+    transform-origin: 82px 82px;
+    animation: ldio-12 0.17421602787456444s infinite linear;
+}
+
+.ldio-12>div div {
+    position: absolute;
+    width: 11.479999999999999px;
+    height: 124.63999999999999px;
+    background: #000000;
+    left: 82px;
+    top: 82px;
+    transform: translate(-50%, -50%);
+}
+
+.ldio-12>div div:nth-child(1) {
+    width: 95.11999999999999px;
+    height: 95.11999999999999px;
+    border-radius: 50%;
+}
+
+.ldio-12>div div:nth-child(6) {
+    width: 78.72px;
+    height: 78.72px;
+    background: #f7f7f7;
+    border-radius: 50%;
+}
+
+.ldio-12>div div:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.ldio-12>div div:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(90deg)
+}
+
+.ldio-12>div div:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(135deg)
+}
+
+.loading-spinner-1 {
+    width: 164px;
+    height: 164px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.ldio-12 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    /* see note above */
+}
+
+.ldio-12 div {
+    box-sizing: content-box;
+}
